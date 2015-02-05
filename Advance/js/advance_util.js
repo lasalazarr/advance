@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('a[href^="#"]').click(function (e) {
+	$('#menu a[href^="#"]').click(function (e) {
 	    e.preventDefault();
 
 	    var target = this.hash;
@@ -8,11 +8,19 @@ $(document).ready(function(){
 	    $('html, body').stop().animate({
 	        'scrollTop': $target.offset().top-100
 	    }, 900, 'swing');
-	});
-	$('#menu a').click(function(){
-		// $(".navbar-collapse").toggle('in');
+		$('.nav-collapse').collapse('hide');
 		$("#menu-button").click();
-   	 	// $('.nav-collapse').collapse('hide');
+	});
+  	// $('.nav-collapse').collapse('hide');
+	$('.nav a[href^="#"]').click(function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top-100
+	    }, 900, 'swing');
 	});
 });
 
