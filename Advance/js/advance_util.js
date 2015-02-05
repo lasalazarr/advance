@@ -1,3 +1,15 @@
+
+setCookie = function(key, value) {
+	var expires = new Date();
+	expires.setTime(expires.getTime() + 600000); //10 minutos enmillisegundos
+	document.cookie = key + '=' + value + ';expires=' +
+	expires.toUTCString();
+	location.reload();
+}
+getCookie = function(key) {
+	var keyValue = document.cookie.match('(^|;) ?' + key +'=([^;]*)(;|$)');
+	return keyValue ? keyValue[2] : null;
+}
 $(document).ready(function(){
 	$('#menu a[href^="#"]').click(function (e) {
 	    e.preventDefault();
@@ -25,12 +37,8 @@ $(document).ready(function(){
 });
 
 $(function() {
-		// new Maplace({
-		// 	locations: [{lat:-0.203680,lon:-78.485120, zoom: 17}],
-		// 	controls_on_map: false
-		// }).Load();
-var LocsAv2 = [{lat:-0.203680,lon:-78.485120, zoom: 17}];
-new Maplace({
+	var LocsAv2 = [{lat:-0.203680,lon:-78.485120, zoom: 17}];
+	new Maplace({
 	locations: LocsAv2,
 	map_div: '#gmap-polyline',
 	    // controls_div: '#controls-polyline',
@@ -59,7 +67,7 @@ var tips = [{
 		'detail':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo, eget egestas augue.'
 	}];
 
-var resume = {'en':'Hello Word', 'es':'Cras tincidunt bibendum justo at finibus. Suspendisse aliquet risus sit amet orci tempus, ut imperdiet lectus pretium. Morbi interdum dapibus ante nec dapibus. . <br> Etiam sed dolor eget odio fringilla maximus. Praesent mattis non lorem sit amet pretium. Morbi faucibus sollicitudin odio, nec posuere tellus rutrum et. Mauris nec volutpat quam. Sed ultricies dolor auctor, tincidunt tortor id, luctus felis.'};
+var whatWeDo = {'en':'Hello Word', 'es':'hola mundo'};
 
 var bulletsLeft = [{
 		'icon'	: 'fa fa-wrench fa-2x',
@@ -88,6 +96,33 @@ var bulletsRight = [{
 		'title'	: 'Titulo 3',
 		'detail': 'Descripcion corta del elemento'
 	}];
+var services = {'title':'Servicios', 
+	'description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo',
+	'img_path':'./img/imagen.jpg',
+	'bubble_text':'"Un libro abierto es un cerebro que habla; cerrado un amigo que espera; olvidado, un alma que perdona; destruido, un corazón que llora."',
+	'bubble_sign': 'Proverbio hindú',
+	'big_text': 'Cras tincidunt bibendum justo at finibus. Suspendisse aliquet risus sit amet orci tempus, ut imperdiet lectus pretium. Morbi interdum dapibus ante nec dapibus. Etiam sed dolor eget odio fringilla maximus. Praesent mattis non lorem sit amet pretium. Morbi faucibus sollicitudin odio, nec posuere tellus rutrum et. Mauris nec volutpat quam. Sed ultricies dolor auctor, tincidunt tortor id, luctus felis.',
+	'thumbs': ["Estrategia","Rapidez","Eficacia"] };
+
+fillServiceSection = function(){
+	$('#title-banner-bold').append(services.title);
+	$('#text-banner-section').append(services.description);
+	$('#circle-pic').css('background-image','url("'+services.img_path+'")');	
+	$('#text-bubble-purple').append(services.bubble_text);
+	$('.text-bubble-gray').append(services.bubble_sign);
+	$('#serviceResume').append(services.big_text);
+	var number_of_cols = (12/services.thumbs.length)<1?1:12/services.thumbs.length;
+	var row = document.getElementById("serviceBulletRow");
+	for(var i=0;i<services.thumbs.length; i++){
+		var col = document.createElement("div");
+		col.className = "col-md-"+number_of_cols+" tip-margen";
+		row.appendChild(col);
+		var thumb = document.createElement("div");
+		thumb.className = "text-thumb";
+		thumb.innerHTML = services.thumbs[i];
+		col.appendChild(thumb);
+	}
+}
 
 fillTips = function(){
 	
@@ -121,10 +156,10 @@ fillTips = function(){
 fillResume = function(lenguage){
 	switch(lenguage){
 		case 'en':
-			$('.textResume').html(resume.en);
+			$('.textResume').html(whatWeDo.en);
 		break;
 		case 'es':
-			$('.textResume').html(resume.es);			
+			$('.textResume').html(whatWeDo.es);			
 		break;		
 	}
 }
