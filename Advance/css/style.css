@@ -93,6 +93,21 @@ body {
 	background-image: linear-gradient(to top, rgba(255,255,255,0.74902) 0%, rgba(255,255,255,0.91) 24%, rgb(255,255,255) 100%);
 	color: #65438D;
 }
+.lenguajes{
+	position: absolute;
+	top: 0;
+	right: 0;	
+	margin-right: 17px;	
+}
+.lenguajes a{
+	font-size: 12px;
+	color: #fff;
+}
+.lenguajes a:hover{
+	color: #65438d;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 /*------------------FIRST SECCTION-------------*/
 .parallax-window {

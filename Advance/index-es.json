@@ -58,8 +58,8 @@
     "contact-us-form-comment" : "Su Comentario",
     "contact-us-form-send" : "Enviar",
     "contact-us-dir" : "Francisco Salazar E10-37 y Jose Luis Tamayo Edf. Atlantic Business Center 7mo Piso Oficina 703.",
-    "contact-us-email" : "info@ac-techsolutions.com",
-    "contact-us-phone" : "+593-2254-9366",
+    "contact-us-email" : {"href":"mailto:info@ac-techsolutions.com","text":"info@ac-techsolutions.com"},
+    "contact-us-phone" : {"href":"tel:+593-2254-9366","text":"tel:+593-2254-9366"},
 
     "footer" : "Advance Consulting. Todos los derechos reservados &#169; 2015"
 
