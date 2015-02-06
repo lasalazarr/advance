@@ -1,6 +1,66 @@
 {
-    "menu1": "QUÉHACEMOS",
+    "menu1": "QUÉ HACEMOS",
     "menu2": "SERVICIOS",
     "menu3": "CLIENTES",
-    "menu4": "CONTÁCTENOS"
+    "menu4": "CONTÁCTENOS",
+
+    "title-site-bold":"Desarrollo",
+    "title-site" : "y Consultoría<br/>de Aplicaciones Multicanal",
+    "thumbs-principal-left" : "CONÓZCANOS",
+    "thumbs-principal-right" : "CONTÁCTENOS",
+
+    "big-thumbs1-title" : "Título 1",
+    "big-thumbs1-detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo, eget egestas augue.",
+    "big-thumbs2-title" : "Título 2",
+    "big-thumbs2-detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo, eget egestas augue.",
+    "big-thumbs3-title" : "Título 3",
+    "big-thumbs3-detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo, eget egestas augue.",
+    "big-thumbs4-title" : "Título 4",
+    "big-thumbs4-detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo, eget egestas augue.",
+
+    "big-resume1" : "Cras tincidunt bibendum justo at finibus. Suspendisse aliquet risus sit amet orci tempus, ut imperdiet lectus pretium. Morbi interdum dapibus ante nec dapibus.<br/>Etiam sed dolor eget odio fringilla maximus. Praesent mattis non lorem sit amet pretium. Morbi faucibus sollicitudin odio, nec posuere tellus rutrum et. Mauris nec volutpat quam. Sed ultricies dolor auctor, tincidunt tortor id, luctus felis.",
+
+    "thumbs-left1-title" : "Título",
+    "thumbs-left1-desc" : "Descripción corta del elemento",
+    "thumbs-left2-title" : "Título",
+    "thumbs-left2-desc" : "Descripción corta del elemento",
+    "thumbs-left3-title" : "Título",
+    "thumbs-left3-desc" : "Descripción corta del elemento",
+
+    "thumbs-right1-title" : "Título",
+    "thumbs-right1-desc" : "Descripción corta del elemento",
+    "thumbs-right2-title" : "Título",
+    "thumbs-right2-desc" : "Descripción corta del elemento",
+    "thumbs-right3-title" : "Título",
+    "thumbs-right3-desc" : "Descripción corta del elemento",
+
+    "service-title" : "Servicios",
+    "service-desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo",
+    "bubble-text" : "\"Un libro abierto es un cerebro que habla; cerrado un amigo que espera; olvidado, un alma que perdona; destruido, un corazón que llora.\" ",
+    "bubble-sign" : "Proverbio hindú.",
+
+    "service-resume" : "Cras tincidunt bibendum justo at finibus. Suspendisse aliquet risus sit amet orci tempus, ut imperdiet lectus pretium. Morbi interdum dapibus ante nec dapibus. <br/>Etiam sed dolor eget odio fringilla maximus. Praesent mattis non lorem sit amet pretium. Morbi faucibus sollicitudin odio, nec posuere tellus rutrum et. Mauris nec volutpat quam. Sed ultricies dolor auctor, tincidunt tortor id, luctus felis",
+    "service-thumb1" : "estratégia",
+    "service-thumb2" : "rapidez",
+    "service-thumb3" : "eficacia",
+
+    "clients-title" : "Clientes",
+    "clients-desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo", 
+    "clients-footer" : "...entre muchos más.", 
+
+    "location-title" : "Ubicación",
+    "location-desc"	: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo",
+
+    "contact-us-title" : "Contáctanos",
+    "contact-us-desc" : "Para mayor información, contáctenos!",
+    "contact-us-form-name" : "Su Nombre",
+    "contact-us-form-email" : "Su Correo",
+    "contact-us-form-comment" : "Su Comentario",
+    "contact-us-form-send" : "Enviar",
+    "contact-us-dir" : "Francisco Salazar E10-37 y Jose Luis Tamayo Edf. Atlantic Business Center 7mo Piso Oficina 703.",
+    "contact-us-email" : {"href":"mailto:info@ac-techsolutions.com","text":"info@ac-techsolutions.com"},
+    "contact-us-phone" : {"href":"tel:+593-2254-9366","text":"tel:+593-2254-9366"},
+
+    "footer" : "Advance Consulting. Todos los derechos reservados &#169; 2015"
+
 }
