@@ -2,5 +2,64 @@
     "menu1": "WHAT WE DO",
     "menu2": "SERVICES",
     "menu3": "CLIENTS",
-    "menu4": "CONTACT US"
+    "menu4": "CONTACT US",
+
+    "title-site-bold":"Development",
+    "title-site" : "and Cunsultancy<br/>of Multichannel Applications",
+    "thumbs-principal-left" : "MEET US",
+    "thumbs-principal-right" : "CONTACT US",
+
+    "big-thumbs1-title" : "Title 1",
+    "big-thumbs1-detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo, eget egestas augue.",
+    "big-thumbs2-title" : "Title 2",
+    "big-thumbs2-detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo, eget egestas augue.",
+    "big-thumbs3-title" : "Title 3",
+    "big-thumbs3-detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo, eget egestas augue.",
+    "big-thumbs4-title" : "Title 4",
+    "big-thumbs4-detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo, eget egestas augue.",
+
+    "big-resume1" : "Cras tincidunt bibendum justo at finibus. Suspendisse aliquet risus sit amet orci tempus, ut imperdiet lectus pretium. Morbi interdum dapibus ante nec dapibus.<br/>Etiam sed dolor eget odio fringilla maximus. Praesent mattis non lorem sit amet pretium. Morbi faucibus sollicitudin odio, nec posuere tellus rutrum et. Mauris nec volutpat quam. Sed ultricies dolor auctor, tincidunt tortor id, luctus felis.",
+
+    "thumbs-left1-title" : "Title",
+    "thumbs-left1-desc" : "Short description of the element",
+    "thumbs-left2-title" : "Title",
+    "thumbs-left2-desc" : "Short description of the element",
+    "thumbs-left3-title" : "Title",
+    "thumbs-left3-desc" : "Short description of the element",
+
+    "thumbs-right1-title" : "Title",
+    "thumbs-right1-desc" : "Short description of the element",
+    "thumbs-right2-title" : "Title",
+    "thumbs-right2-desc" : "Short description of the element",
+    "thumbs-right3-title" : "Title",
+    "thumbs-right3-desc" : "Short description of the element",
+
+    "service-title" : "Services",
+    "service-desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo",
+    "bubble-text" : "\"Un libro abierto es un cerebro que habla; cerrado un amigo que espera; olvidado, un alma que perdona; destruido, un corazón que llora.\" ",
+    "bubble-sign" : "Proverbio hindú.",
+
+    "service-resume" : "Cras tincidunt bibendum justo at finibus. Suspendisse aliquet risus sit amet orci tempus, ut imperdiet lectus pretium. Morbi interdum dapibus ante nec dapibus. <br/>Etiam sed dolor eget odio fringilla maximus. Praesent mattis non lorem sit amet pretium. Morbi faucibus sollicitudin odio, nec posuere tellus rutrum et. Mauris nec volutpat quam. Sed ultricies dolor auctor, tincidunt tortor id, luctus felis",
+    "service-thumb1" : "strategy",
+    "service-thumb2" : "smartness",
+    "service-thumb3" : "eficcacy",
+
+    "clients-title" : "Clients",
+    "clients-desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo", 
+    "clients-footer" : "...and much more.", 
+
+    "location-title" : "Location",
+    "location-desc"	: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at facilisis justo",
+
+    "contact-us-title" : "Contact Us",
+    "contact-us-desc" : "For more information, Contact us!",
+    "contact-us-form-name" : "Your Name",
+    "contact-us-form-email" : "Your Email",
+    "contact-us-form-comment" : "Your Comment",
+    "contact-us-form-send" : "Send",
+    "contact-us-dir" : "Francisco Salazar E10-37 y Jose Luis Tamayo Edf. Atlantic Business Center 7th Floor Office 703.",
+    "contact-us-email" : "info@ac-techsolutions.com",
+    "contact-us-phone" : "+593-2254-9366",
+
+    "footer" : "Advance Consulting. All rights reserved &#169; 2015"
 }

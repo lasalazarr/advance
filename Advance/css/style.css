@@ -39,10 +39,10 @@ body {
     width: 100%;
 }
 /*------------------PARALLAX-------------------*/
-img.parallax-slider {
+/*img.parallax-slider {
     height: 100% !important;
     width: 100% !important;
-}
+}*/
 /*------------------HEADER---------------------*/
 .header{
 	height: 84px;
@@ -278,7 +278,7 @@ img.parallax-slider {
 	text-align: center;
 }
 .circle-pic {
-	background: url("../img/imagen.jpg") no-repeat scroll center center rgb(255, 255, 255);
+	background: url("../img/imagen.jpg") no-repeat scroll center center / 95px 95px rgb(0, 0, 0);
 	border-style: solid;
 	background-color: #fff;
 	border-width: 2px;
@@ -448,6 +448,7 @@ img.parallax-slider {
     font-size: 24px;
     font-weight: 500;
     margin-left: 20px;
+    margin-bottom: 10px;
     min-width: 150px;
 }
 .form-control:focus {
