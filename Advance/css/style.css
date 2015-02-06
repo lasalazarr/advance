@@ -258,6 +258,10 @@ img.parallax-slider {
     text-align: left;
     margin-left: 0;
 }
+.imgCentral{
+	text-align: center;
+	margin-bottom: 10px;
+}
 /*---------------- PARALLAX SERVICIOS------------------*/
 .metalframe-purple{
 	background-color:rgba(106, 71, 142, 0.2);
@@ -270,7 +274,7 @@ img.parallax-slider {
 .text-banner-section {
 	font-size: 24px;
 	color: rgb(255, 255, 255);
-	line-height: 2.917;
+	line-height: 1.5;
 	text-align: center;
 }
 .circle-pic {
@@ -318,6 +322,7 @@ img.parallax-slider {
     margin: 25px;
     position: relative;
     text-align: left;
+    top: -7px;
 }
 .modify-height{
 	height: 640px;
