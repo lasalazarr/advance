@@ -1,0 +1,60 @@
+<!-- Ant Build para el proyecto Libreria de Firma Digital -->
+<project name="firma-digital-lib" basedir="." default="signjar">
+
+	<!-- Propiedades varias -->
+	<property name="version" value="0.4" />
+	<property name="src.dir" value="src/main" />
+	<property name="lib.dir" value="lib" />
+	<property name="build.dir" value="build" />
+	<property name="config.dir" value="config" />
+	<property name="classes.dir" value="${build.dir}/classes" />
+	<property name="jar.dir" value="${build.dir}/jar" />
+	<property name="jar.name" value="${ant.project.name}-${version}.jar" />
+
+	<!-- KeyStore para firma el Applet -->
+	<property name="keystore.file" value="${config.dir}/PC201504271149.jks" />
+	<property name="keystore.alias" value="1" />
+	<property name="keystore.password" value="Cachorro1989" />
+
+	<!-- Propiedades para firmar el Applet -->
+	<property name="cert.CN" value="Libreria de Firma Digital" />
+	<property name="cert.OU" value="Subsecretaria de Informatica" />
+	<property name="cert.O" value="Presidencia de la Republica del Ecuador" />
+	<property name="cert.C" value="EC" />
+
+	<path id="classpath">
+		<fileset dir="${lib.dir}" includes="**/*.jar" />
+	</path>
+
+	<!-- Clean -->
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+
+	<!-- Compilar -->
+	<target name="compile">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="classpath" target="1.5" debug="true" />
+	</target>
+
+	<!-- Crar el JAR -->
+	<target name="jar" depends="compile">
+		<mkdir dir="${jar.dir}" />
+		<jar destfile="${jar.dir}/${jar.name}" basedir="${classes.dir}">
+		</jar>
+	</target>
+
+	<!-- Firmar el JAR -->
+	<target name="signjar" depends="jar">
+		<!--<delete file="${keystore.file}" />
+		<genkey alias="${keystore.alias}" storepass="${keystore.password}" keystore="${keystore.file}" verbose="false">
+			<dname>
+				<param name="CN" value="${cert.CN}" />
+				<param name="OU" value="${cert.OU}" />
+				<param name="O" value="${cert.O}" />
+				<param name="C" value="${cert.C}" />
+			</dname>
+		</genkey>-->
+		<signjar jar="${jar.dir}/${jar.name}" alias="${keystore.alias}" storepass="${keystore.password}" keystore="${keystore.file}" />
+	</target>
+</project>

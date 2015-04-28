@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.modinter</groupId>
+	<packaging>jar</packaging>
+	<version>1.0</version>
+	<name>mcm-web-render Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+	<dependency>
+		<groupId>org.bouncycastle</groupId>
+		<artifactId>bcprov-jdk15on</artifactId>
+		<version>1.49</version>
+		<type>jar</type>
+	</dependency>
+	<dependency>
+		<groupId>org.bouncycastle</groupId>
+		<artifactId>bcmail-jdk15on</artifactId>
+		<version>1.49</version>
+		<type>jar</type>
+	</dependency>
+<!-- 	<dependency> -->
+<!-- 		<groupId></groupId> -->
+<!-- 		<artifactId>xmlsec</artifactId> -->
+<!-- 		<version>1.4.2</version> -->
+<!-- 	</dependency> -->
+	<dependency>
+		<groupId>com.itextpdf</groupId>
+		<artifactId>itextpdf</artifactId>
+		<version>5.4.0</version>
+	</dependency>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.8.1</version>
+	</dependency>
+	</dependencies>
+	  <build>
+    <sourceDirectory>src/main</sourceDirectory>
+<!--     <plugins> -->
+<!--       <plugin> -->
+<!--         <artifactId>maven-compiler-plugin</artifactId> -->
+<!--         <version>2.0.2</version> -->
+<!--       </plugin> -->
+<!--     </plugins> -->
+  </build>
+	  <artifactId>firma-digital-lib</artifactId>
+</project>
